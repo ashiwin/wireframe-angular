@@ -7,15 +7,47 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<div>
-  <h1>{{ desc.title }}</h1>
-  <p>{{ desc.text }}</p>
-</div>
-<div *ngFor="let wire of displayedWires">
-  <h2>{{ wire.title }}</h2>
-  <p>{{ wire.text }}</p>
-</div>
-<button [disabled]="endOfWires()" (click)="loadMoreWires()">{{ loadMoreButtonText() }}</button>
+<header>
+</header>
+<nav class="navbar fixed-top">
+  <div class="container">
+  </div>
+</nav>
+<section>
+  <div class="title">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>{{ desc.title }}</h1>
+          <p>{{ desc.text }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<article>
+  <div class="boxes">
+    <div class="container">
+      <div class="row">
+        <div *ngFor="let wire of displayedWires" class="col-12 col-md-6 col-lg-4">
+          <div class="box-items">
+            <h2>{{ wire.title }}</h2>
+            <p>{{ wire.text }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center"><button [disabled]="endOfWires()" (click)="loadMoreWires()" class="btn btn-primary">{{ loadMoreButtonText() }}</button></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+<aside>
+</aside>
+<footer>
+</footer>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->

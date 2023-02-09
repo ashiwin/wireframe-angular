@@ -1,1 +1,99 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* font configurations */
+/* @import url('fonts.css'); */
+
+/* font styling */
+h1,
+h2,
+h3,
+h4,
+a:link,
+a:visited,
+a:hover,
+a:active {
+	/* font-family: 'Quicksand', sans-serif; */
+}
+
+p,
+span {
+	/* font-family: 'Quicksand', sans-serif; */
+}
+
+.modal-title.h4, .modal-body {
+  /* font-family: 'Quicksand', sans-serif; */
+}
+
+.read-more-modal .modal-dialog {
+  max-width: 90%;
+  height: 90%;
+}
+
+.read-more-modal .modal-header, .read-more-modal .modal-content, .read-more-modal .modal-footer {
+  border-radius: 0;
+  border: 0;
+}
+
+.btn, .btn:link, .btn:visited, .btn:active, .btn:disabled, .btn:focus-visible, .btn:first-child:active, :not(.btn-check)+.btn:active {
+	padding: 13px 20px;
+	border-radius: 15px;
+	background-color: #e00069;
+  border-color: #e00069;
+	box-shadow: 0 2px 1px 0 rgb(0 0 0 / 12%);
+	-webkit-transition: background-color .3s,box-shadow .3s,color .3s;
+	transition: background-color .3s,box-shadow .3s,color .3s;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	border-color: #ff298d;
+	background-color: #ff298d;
+}
+
+.navbar {
+	background-color: #ffec01;
+	box-shadow: 0 1px 0 0 rgb(0 0 0 / 13%);
+	height: 75px;
+}
+
+section {
+	padding-top: 75px;
+	margin-top: 25px;
+}
+
+.box-items {
+	background-color: rgba(255,236,1,.5);
+	margin: 10px 0;
+	padding: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.box-items p {
+	  min-height: 150px;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.box-items p {
+	  min-height: 185px;
+	}
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+	.box-items p {
+	  min-height: 150px;
+	}
+}
+
+@media (min-width: 1400px) {
+	.box-items p {
+	  min-height: 120px;
+	}
+}
+
+footer {
+	height: 75px;
+}
