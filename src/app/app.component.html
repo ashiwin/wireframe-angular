@@ -31,9 +31,9 @@
       <div class="row">
         <div *ngFor="let wire of displayedWires" class="col-12 col-md-6 col-lg-4">
           <div class="box-items">
-            <span>{{ wire.date }}</span>
+            <span>{{ wire.date | date: 'dd MMMM yyyy' }}</span>
             <h2>{{ wire.title }}</h2>
-            <p>{{ wire.text }}</p>
+            <p>{{ wire.text.slice(0, 200) + (wire.text.length > 200 ? '...' : '') }}</p>
           </div>
         </div>
       </div>
