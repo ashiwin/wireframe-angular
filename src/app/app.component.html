@@ -11,10 +11,11 @@
   <h1>{{ desc.title }}</h1>
   <p>{{ desc.text }}</p>
 </div>
-<div *ngFor="let wire of wires">
+<div *ngFor="let wire of displayedWires">
   <h2>{{ wire.title }}</h2>
   <p>{{ wire.text }}</p>
 </div>
+<button [disabled]="endOfWires()" (click)="loadMoreWires()">{{ loadMoreButtonText() }}</button>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
